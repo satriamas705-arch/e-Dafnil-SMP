@@ -477,7 +477,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ appState, onLoginSuccess }
 
       {/* Footer */}
       <footer className="relative z-10 py-4 text-center text-xs text-slate-300/80 font-medium bg-slate-950/40 backdrop-blur-xs border-t border-white/5">
-        Created by Tim IT {schoolName} &bull; Portal Penilaian Siswa v1.1
+        Created by Mas Prie &bull; Portal Penilaian Siswa v1.1
       </footer>
     </div>
   );

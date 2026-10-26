@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Rich Gold Gradients -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce788"/>
+      <stop offset="25%" stop-color="#eab332"/>
+      <stop offset="60%" stop-color="#c98a18"/>
+      <stop offset="100%" stop-color="#996009"/>
+    </linearGradient>
+
+    <linearGradient id="goldGradientLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b87a10"/>
+      <stop offset="50%" stop-color="#f5c84c"/>
+      <stop offset="100%" stop-color="#fff0a3"/>
+    </linearGradient>
+
+    <!-- Navy Blue Colors -->
+    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#194874"/>
+      <stop offset="50%" stop-color="#123d65"/>
+      <stop offset="100%" stop-color="#0c2d4d"/>
+    </linearGradient>
+
+    <!-- Soft shadow -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#092138" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(44, 44)" filter="url(#subtleShadow)">
+    <!-- 1. OUTER "e" MONOGRAM IN DEEP NAVY BLUE -->
+    <path fill="url(#navyGradient)" fill-rule="evenodd" d="
+      M 256, 32
+      C 379.7, 32 480, 132.3 480, 256
+      C 480, 266 479.3, 275.8 478, 285.5
+      L 404.5, 285.5
+      C 403.4, 276 402.8, 266.2 402.8, 256
+      C 402.8, 174.9 337.1, 109.2 256, 109.2
+      C 174.9, 109.2 109.2, 174.9 109.2, 256
+      C 109.2, 337.1 174.9, 402.8 256, 402.8
+      C 303.4, 402.8 345.8, 380.4 372.8, 345.8
+      L 448.2, 406.8
+      C 404.5, 458.5 334.3, 491.5 256, 491.5
+      C 126.2, 491.5 20.5, 385.8 20.5, 256
+      C 20.5, 126.2 126.2, 32 256, 32
+      Z
+      
+      M 85, 236
+      L 182, 236
+      C 182, 256 182, 256 182, 276
+      L 85, 276
+      C 84.6, 262.8 84.6, 249.2 85, 236
+      Z
+
+      M 345, 236
+      L 476, 236
+      C 477.5, 249.2 478.2, 262.6 478.2, 276
+      L 345, 276
+      Z
+    " />
+
+    <!-- Pure White Central Canvas -->
+    <circle cx="256" cy="256" r="142" fill="#ffffff" />
+
+    <!-- 2. GOLDEN CROWN -->
+    <g id="crown" fill="url(#goldGradient)">
+      <path d="
+        M 215, 185
+        C 230, 182 256, 176 256, 176
+        C 256, 176 282, 182 297, 185
+        L 305, 150
+        L 288, 164
+        L 278, 138
+        L 256, 158
+        L 234, 138
+        L 224, 164
+        L 207, 150
+        Z
+      " stroke="#996009" stroke-width="1.2" stroke-linejoin="round"/>
+
+      <circle cx="207" cy="148" r="4.5" fill="url(#goldGradientLight)" stroke="#996009" stroke-width="1"/>
+      <circle cx="234" cy="136" r="5" fill="url(#goldGradientLight)" stroke="#996009" stroke-width="1"/>
+      <circle cx="256" cy="130" r="5.5" fill="url(#goldGradientLight)" stroke="#996009" stroke-width="1"/>
+      <circle cx="278" cy="136" r="5" fill="url(#goldGradientLight)" stroke="#996009" stroke-width="1"/>
+      <circle cx="305" cy="148" r="4.5" fill="url(#goldGradientLight)" stroke="#996009" stroke-width="1"/>
+    </g>
+
+    <!-- 3. GOLDEN SHIELD -->
+    <g id="shield">
+      <path d="
+        M 194, 206
+        C 220, 196 256, 184 256, 184
+        C 256, 184 292, 196 318, 206
+        C 328, 260 320, 312 256, 348
+        C 192, 312 184, 260 194, 206
+        Z
+      " fill="#ffffff" stroke="url(#goldGradient)" stroke-width="15" stroke-linejoin="round" />
+
+      <path d="
+        M 202, 212
+        C 225, 203 256, 193 256, 193
+        C 256, 193 287, 203 310, 212
+        C 318, 258 310, 302 256, 335
+        C 202, 302 194, 258 202, 212
+        Z
+      " fill="#ffffff" stroke="#fef08a" stroke-width="2.5" />
+    </g>
+
+    <!-- 4. DYNAMIC GOLDEN CHECKMARK (✓) -->
+    <path id="checkmark" d="
+      M 222, 254
+      L 256, 298
+      C 278, 258 316, 214 366, 182
+      C 326, 208 284, 258 260, 314
+      L 212, 262
+      Z
+    " fill="url(#goldGradient)" stroke="#8c5305" stroke-width="1.2" stroke-linejoin="round" />
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "e-Dafnil SMP",
+  "description": "Aplikasi penilaian siswa berbasis web dengan manajemen data guru, kelas, mapel, siswa, nilai sumatif, analisis kelas 9 (Cetak SKNR, SKL, Transkrip), serta fitur notifikasi dan backup restore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

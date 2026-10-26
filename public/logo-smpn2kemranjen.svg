@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <filter id="schoolShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="purpleBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="50%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#581c87"/>
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="40%" stop-color="#ea580c"/>
+      <stop offset="80%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pentagonal Shield with Curved Sides -->
+  <!-- Outer Gold Border -->
+  <path d="M 100,16 L 175,54 C 182,110 152,158 100,188 C 48,158 18,110 25,54 Z"
+        fill="#ffffff" stroke="url(#goldBorder)" stroke-width="6" stroke-linejoin="round" filter="url(#schoolShadow)"/>
+
+  <!-- Inner Purple Base -->
+  <path d="M 100,22 L 168,56 C 174,106 146,150 100,178 C 54,150 26,106 32,56 Z"
+        fill="url(#purpleBg)"/>
+
+  <!-- Golden Ring in Center -->
+  <circle cx="100" cy="100" r="42" fill="#ffffff" stroke="#facc15" stroke-width="4"/>
+
+  <!-- Open Book at Base of Ring -->
+  <path d="M 72,118 Q 100,112 100,125 Q 100,112 128,118 L 128,128 Q 100,122 100,135 Q 100,122 72,128 Z" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
+  <path d="M 74,120 Q 100,115 100,124 Q 100,115 126,120 L 126,126 Q 100,121 100,132 Q 100,121 74,126 Z" fill="#ffffff"/>
+
+  <!-- Torch Handle & Flame -->
+  <!-- Torch Handle -->
+  <path d="M 96,122 L 94,88 L 106,88 L 104,122 Z" fill="#78350f" stroke="#eab308" stroke-width="1"/>
+  <ellipse cx="100" cy="88" rx="7" ry="3" fill="#eab308"/>
+
+  <!-- Bright Flame -->
+  <path d="M 100,52 C 86,72 88,84 94,87 C 98,89 102,89 106,87 C 112,84 114,72 100,52 Z" fill="url(#flameGrad)"/>
+  <path d="M 100,62 C 92,74 94,82 97,84 C 99,85 101,85 103,84 C 106,82 108,74 100,62 Z" fill="#fef08a"/>
+
+  <!-- School Name Top Ribbon -->
+  <path d="M 46,45 Q 100,28 154,45" fill="none" id="textPathTop"/>
+  <text font-family="Arial, sans-serif" font-weight="900" font-size="8.5" fill="#fef08a" letter-spacing="0.5">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">
+      SMP NEGERI 2 KEMRANJEN
+    </textPath>
+  </text>
+
+  <!-- Banyumas Bottom Ribbon -->
+  <path d="M 44,142 Q 100,175 156,142" fill="none" id="textPathBottom"/>
+  <text font-family="Arial, sans-serif" font-weight="900" font-size="7.5" fill="#fef08a" letter-spacing="1">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">
+      KABUPATEN BANYUMAS
+    </textPath>
+  </text>
+</svg>
